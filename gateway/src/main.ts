@@ -4,7 +4,7 @@ import { GatewayModule } from './gateway.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(GatewayModule);
-  
+
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(8000);
 }

@@ -9,7 +9,7 @@ async function bootstrap() {
       transport: Transport.TCP,
       options: {
         port: 4000,
-      }
+      },
     },
   );
   app.listen();
